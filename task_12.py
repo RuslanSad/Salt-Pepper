@@ -35,7 +35,5 @@ class JellyBean(Dessert):
         self.flavor = flavor
 
     def is_delicious(self):
-        if self.flavor == 'black licorice':
-            return False
-        else:
-            return True
+        return self.flavor != 'black licorice'
+
