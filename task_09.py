@@ -24,4 +24,4 @@ def connect_dicts(dict1, dict2):
         if v >= 10 and k not in dict3.keys():
             dict3[k] = v
 
-    print(dict(sorted(dict3.items(), key=lambda x: x[1])))
+    return dict(sorted(dict3.items(), key=lambda x: x[1]))

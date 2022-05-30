@@ -22,6 +22,7 @@ def rps_game_winner(arr):
         raise NoSuchStrategyError('Введенное значение одного из игроков некорректное')
     else:
         if p1 == p2 or p1 + p2 in WIN_P1:
-            print(' '.join(i for i in arr[0]))
+            return ' '.join(i for i in arr[0])
         else:
-            print(' '.join(i for i in arr[1]))
+            return ' '.join(i for i in arr[1])
+

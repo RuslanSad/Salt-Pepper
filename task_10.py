@@ -12,6 +12,6 @@ def count_words(string):
                 dict1[i] = 1
             else:
                 dict1[i] += 1
-    print(dict1)
+    return dict1
 
 

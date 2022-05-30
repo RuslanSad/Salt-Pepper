@@ -5,4 +5,4 @@ def is_palindrome(st1):
     for i in st1:
         if i in BOOK:
             st2 += i
-    print(st2 == st2[::-1])
+    return st2 == st2[::-1]

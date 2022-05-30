@@ -7,5 +7,4 @@ def max_odd(array):
                 max_val = i
             elif i % 2 != 0 and i > max_val:
                 max_val = i
-    print(max_val)
-
+    return max_val

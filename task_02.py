@@ -1,4 +1,4 @@
-def coincidence(list=0, range=0):
+def coincidence(list=[], range=0):
     arr = []
     if list == 0 or range == 0:
         print(arr)
@@ -6,4 +6,4 @@ def coincidence(list=0, range=0):
         for i in list:
             if isinstance(i, (int, float)) and i >= range[0] and i <= range[-1]:
                 arr.append(i)
-        print(arr)
+        return arr

@@ -10,4 +10,4 @@ def sort_list(list):
         list += [min_val]
     elif len(list) == 1:
         list = list * 2
-    print(list)
+    return list

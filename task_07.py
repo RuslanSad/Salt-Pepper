@@ -18,6 +18,4 @@ def combine_anagrams(words_array):
         for i in arr:
             if i in words_array:
                 words_array.remove(i)
-    print(arr_anagrams)
-
-
+    return arr_anagrams

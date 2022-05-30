@@ -6,4 +6,4 @@ def multiply_numbers(inputs=None):
             var=int(i)
         elif i in BOOK:
             var*=int(i)
-    print(var)
+    return var
