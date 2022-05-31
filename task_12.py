@@ -18,7 +18,10 @@ class Dessert:
         self.calories = calories
 
     def is_healthy(self):
-        return int(self.calories) < 200
+        try:
+            return int(self.calories) < 200
+        except ValueError:
+            return False
 
     def is_delicious(self):
         return True
@@ -28,8 +31,9 @@ class JellyBean(Dessert):
     flavor = Desk()
 
     def __init__(self, name='', calories=0, flavor=''):
-        super().__init__()
+        super().__init__(name, calories)
         self.flavor = flavor
+
 
     def is_delicious(self):
         return self.flavor != 'black licorice'
